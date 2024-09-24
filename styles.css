@@ -1,0 +1,138 @@
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+h2, h3 {
+    color: #bb86fc; /* Roxo suave */
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+
+section {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input {
+    background-color: #262626;
+    color: #ffffff;
+    border: 1px solid #333333;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #bb86fc;
+    color: #000000;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #9f6bdb;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #333333;
+}
+
+th {
+    background-color: #1e1e1e;
+    color: #bb86fc;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #262626;
+    color: #ffffff;
+}
+
+
+.busca__produto input {
+    background-color: #262626;
+    color: #ffffff;
+    border: 1px solid #333333;
+    padding: 10px;
+    border-radius: 4px;
+    width: calc(100% - 100px);
+    margin-right: 10px;
+}
+
+.busca__produto button {
+    background-color: #bb86fc;
+    width: 80px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333333;
+    margin: 20px 0;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+
+    .busca__produto input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .busca__produto button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Estoque</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="cadastro">
+        <h2>Cadastro de produtos</h2>
+        <br>
+        <form action="" class="formulario" id="formulario">
+            <label for="nomeProduto">Nome do Produto: </label>
+            <input type="text" id="nomeProduto" class="cadastro__produtos" required>
+            
+            <label for="tipoProduto">Tipo do produto: </label>
+            <input type="text" id="tipoProduto" class="cadastro__produtos" required>
+
+            <label for="quantidadeProduto">Quantidade: </label>
+            <input type="text" id="quantidadeProduto" class="cadastro__produtos" required>
+
+            <button type="button" id="botao__cadastrar">Cadastrar</button>
+        </form>
+    </section>
+    <hr>
+    
+    <section class="estoque">
+        <section class="busca__produto">
+            <div>
+                <label for="produto__buscado">Nome do produto: </label>
+                <input type="text" id="produto__buscado">
+                <button type="button" id="btn__busca" onclick="buscarProduto()">Buscar</button>
+            </div>
+            <br>
+            <br>
+            <table border="1" class="tabela__buscas">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Tipo</th>
+                        <th>Quantidade</th>
+                        <th>-</th>
+                    </tr>
+                </thead>
+                <tbody class="corpo__tabela">
+                    <!-- As linhas serão inseridas aqui pelo JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="lista__produtos">
+            <h3>Estoque atual</h3>
+            <table border="1" class="tabela__produtos" id="tabelaProdutos">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Tipo</th>
+                        <th>Quantidade</th>
+                        <th>-</th>
+                    </tr>
+                </thead>
+                <tbody class="corpo__tabela">
+                    <!-- As linhas serão inseridas aqui pelo JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+    </section>
+
+    <!-- <script src="./app.js"></script> -->
+     <script src="script.js"></script>
+</body>
+</html>
